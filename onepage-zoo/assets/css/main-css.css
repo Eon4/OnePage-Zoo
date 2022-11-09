@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;400;500;700&display=swap');
+@import url(nav.css);
+/* -------------------------------- VARIABLES IN HTML ------------------------------ */
+:root {
+    --darkgreen: #185220;
+    --lightgreen: rgb(67, 124, 66);
+    --limegreen: #94f065;
+    --grey: rgb(53, 52, 51);
+    --lightgray:#b4b4b4;
+    --black: rgb(20, 19, 19);
+    --white: #ffffff;
+    --orange: #cb7d09;
+    --warmorange:#e89700;
+}
+*{
+    box-sizing: border-box;
+}
+/* -------------------------------- BODY ------------------------------ */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--light);                       /*IF I USE THE BACKGROUND COLOR*/
+} 
+
+/* .div-main{ BRUG KUN DEN HER KLASSE HVIS DU HAR EN DIV (SOM INDEHOLDER ALT-EN MAIN CONTAINER) I HTML SOM HEDDER DIV-MAIN */
+    /* max-width: 1300px;
+    margin: auto;
+    border: solid #999 1px;
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 500;
+    color: #333333;
+} */
+
+/* -------------------------------- HEADER AND NAVIGATION ------------------------------ */
+nav {
+    float: block;
+    padding: 8px;
+    background-color: var(--lightgreen);
+    position: relative;
+    border-color: var(--orange);
+    border-width: 5px;
+    border-bottom-style:groove;
+}
+/* nav img{
+    position: left;
+    top: 20px;
+    right: 10px;
+    
+  } */
+  ul {
+      float: right;
+      display: flex;
+  
+  }
+  
+  li {
+      list-style: none;
+      margin-left: 30px;
+  }
+  
+  li a {
+      text-decoration: none;
+      color: var(--white);
+  }
+
+
+  
+/* -------------------------------- FRONT IMG WITH BUTTON AND TEXT------------------------------ */
+/* The hero image */
+.heroimg {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    width: 100%;
+  
+    /* Set a specific height */
+    height: 70%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .herotext {
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+  }
+.button {
+    font-weight: 100px;
+    border-radius: 12px;
+    border: 2px solid var(--white);
+    outline: 100px;
+    display: inline-block;
+    padding: 10px 50px;
+    color: var(--white);
+    background-color: rgb(245, 245, 245, 0.3);
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #146d20a0;
+    color: var(--white);
+  }
+
+  h2 {
+    font-size: medium;
+    color: var(--white);
+  }
+
+
+/* -------------------------------- GALLERY ------------------------------ */
+
+#modal{
+    height: 60vh;
+    width: 60vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-color: var(--darkgreen);
+    border-style:groove;
+}
+
+dialog::backdrop{
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(2px);
+}
+#title{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    padding: 4px 8px;
+    border-radius: 3px;
+    opacity: 0.2;
+}
+#modal:hover #title{
+    opacity: 1;
+}
+
+/* #wrapper {
+    width: 40%;
+    position: center;
+} */
+
+/* -------------------------------- SOMETHING ------------------------------ */
+h3 {
+    font-size: large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: var(--darkgreen);
+}
+/* -------------------------------- ACTIVITIES------------------------------ */
+section {
+    background-color: var(--darkgreen);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.actimg1 {
+    position: flex;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #cb7d09;
+    margin-left: 25%;
+    width: 50%;
+    padding: 5px;
+}
+
+.actimg2 {
+    position: flex;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #cb7d09;
+    margin-right: 25%;
+    width: 90%;
+    padding: 5px;
+}
+
+h4 {
+    color: var(--white);
+    text-align: left;
+}
+
+h5 {
+    color: var(--limegreen);
+    text-align: right;
+    padding-right: 5px;
+}
+
+
+/* -------------------------------- FOOTER WITH CONTACT FORM ------------------------------ */
+
+.FormLogo {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200%;
+    border-radius: 90%;
+}
+
+h6 {
+    color: var(--white);
+    font-size: large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 10px;
+}
+
+footer {
+  background-color: var(--darkgreen);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: auto;
+}
+
+fieldset {
+  color:#ffffff;
+  border-color: transparent;
+  background-color:var(--lightgreen);
+}
+
+input {
+  font-family: sans-serif;
+  /* padding: 5px 40px; */
+  /* font-size: 25px; */
+  /* color:#ffffff; */
+  text-align: left;
+  background-color: var(--lightgray);
+  border-color: #ffffff;
+  border-width: 5px;
+  padding-right: 230px;
+}
+
+textarea {
+  font-family: sans-serif;
+  /* padding: 5px 60px; */
+  /* font-size: 25px; */
+  /* color: rgb(255, 255, 255); */
+  text-align: left;
+  background-color: var(--lightgray);
+  resize: none;
+  border-color: #ffffff;
+  border-width: 5px;
+  padding-bottom: 10px;
+  padding-right: 100px;
+}
+
+::placeholder {
+  color: #000000;
+  font-size: 15px;
+  opacity: 1; /* Firefox */
+}
+
+/*-------------------------------------- CANCEL AND SEND BUTTONS---------------------------------*/
+
+.knap1 {
+    padding: 5px 50px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color:var(--warmorange);
+    border-width: 5px;
+    border-color: #ffffff;
+    /* border-radius: 12px; */
+    cursor: pointer;
+  }
+  .knap2 {
+    padding: 5px 50px;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: var(--warmorange);
+    border-width: 5px;
+    border-color:  #ffffff;
+    /* border-radius: 12px; */
+    cursor: pointer;
+  }
+  /*-------------------------------------- CANCEL AND SEND BUTTONS WITH HOOVER EFFECT---------------------------------*/
+  .knap1 {
+    transition-duration: 0.4s;
+  }
+  
+  .knap1:hover {
+    background-color: #307321; /* Green */
+    color: white;
+  }
+  
+  .knap2 {
+    transition-duration: 0.4s;
+  }
+  
+  .knap2:hover {
+    background-color: #8d1717; /* Red */
+    color: white;
+  }
+  /*------------------------------------------ SCROOL BEHAVIOR --------------------------------------*/
+  html {
+    scroll-behavior: smooth;
+  }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="./assets/css/main-css.css">
+    <script src="./assets/js/JS.js" defer></script> <!-- HUSK AT defer BETYDER AT HTML SKAL LÆSES IGENNEM FØR JAVA SCRIPT KØRE -->
+</head>
+<body>
+    <!-----------------------Header and Navigation------------------------------>
+    <header>
+     <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Activities</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <img id="navLogo" src="./assets/images/logo.svg" width="7%">
+    </nav>
+    </header>
+    <!------------------------FRONT IMG WITH TICKET BUTTON------------------------------->
+<div class="heroimg">
+    <img src="./assets/images/blueara.jpg" alt="" class="heroimg">
+    <div class="herotext">
+        <h1>Welcome to Shaldon Zoo</h1>
+        <h2>Planing on visiting us soon?</h2>
+        <button class="button">Buy tickets here</button>
+    </div>
+</div>
+ <!-------------------------------- GALLERY ------------------------------------------->
+<h3>Meet the animals of Shaldon Zoo</h3>
+
+<div id="wrapper"></div>
+<dialog id="modal">
+    <span id="title">Title</span>
+</dialog>
+
+ <!-------------------------------- ACTIVITIES ------------------------------->
+ <h3>Activities</h3>
+
+ <section>
+
+    <a href="default.asp"><img src="./assets/images/birdchild.jpg" alt="activity" class="actimg1"></a>
+    <h4>text here</h4>
+    <h5>text here</h5>
+    <a href="default.asp"><img src="./assets/images/penguin.jpg" alt="activity" class="actimg2"></a>
+
+ </section>
+
+ <!------------------------ ABOUT US ------------------------------->
+ <h3>About us</h3>
+<p>History</p>
+
+
+
+ <!------------------------ FOOTER WITH ABOUT AND CONTACT FORM ------------------------------->
+ <h3>Contact us</h3>
+
+
+ <footer>
+    <section>
+        <h6>Follow us on social media</h6>
+        <div class="section1" id="contact">
+            <img src="./assets/images/redara.jpg" class="FormLogo">
+</div>
+
+      </section>
+        <div class="section2">
+            <fieldset>
+                <form novalidate onsubmit="return validate(this);">
+    <form action="https://etellerandet.dk/kontakt.php" method= "post">
+        <fieldset id="persOpl">
+          <label>
+        <br><input type="text" placeholder="Name" name="name" required></br>
+        <br><input type="text" placeholder="E-mail" name="email" required></br>
+        <br><textarea rows="10" cols="40" placeholder="Write a message here"></textarea>
+        <br><input type="radio" id="tilmeld" name="subscribtion" value="tilmeld">
+        <label for="html">Subscribe to get the latest news</label><br>
+        <br><input type="submit" class="knap1" value="Send" id="knap1">
+        <input type="submit" class="knap2" value="Cancel" id="knap2"></br>
+    </label>
+</form>
+    </fieldset>
+          </div>
+        </div>
+</footer>
+
+
+</body>
+</html>
